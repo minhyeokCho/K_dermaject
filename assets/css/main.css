@@ -1,0 +1,158 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 Main 》
+************************************************************************************************************************************************************ */
+.main {margin-bottom:170px;}
+.main_tit {font-family:'Cardo', serif; font-weight:700; font-size:6rem; line-height:1.3em; color:#000;}
+.more_btn span {display:inline-block; padding-right:40px; background:url(../images/arr_right.svg) no-repeat right 8px center; background-size:22px 18px; position:relative; font-size:2rem;}
+.more_btn span::before {display:inline-block; content:''; width:24px; height:24px; background-color:#6074C4; position:absolute; right:0; top:calc(50% - 12px); border-radius:50%; z-index:-1; transition:transform .3s; transform:scale(0);}
+.more_btn span:hover::before {transform: scale(1);}
+
+/* ============================== [ 메인이미지 ] ========================================================================================== */
+.main_visual {width:100%;}
+video {width:100%;}
+
+/* ============================== [ MN DRUG ] ========================================================================================== */
+.sec_mn {max-width:1320px; width:100%; box-sizing:border-box; margin:0 auto; padding:85px 20px 0; position:relative;}
+.sec_mn::before {display:block; content:'DERMAJECT & MN DRUG'; font-family:'Cardo', serif; color:#E5E5E5; font-size:1.9rem; font-weight:700; transform:rotateZ(-90deg); width:250px; position:absolute; left:-200px; top:57%;}
+.sec_mn .cotn {display:flex; align-items:center; margin-top:35px; position:relative;}
+.sec_mn .cotn::after {display:block; content:''; width:180px; height:180px; background:url(../images/main_txt_cir.svg) no-repeat 0 0; background-size:180px 180px; position:absolute; left:40%; bottom:-90px; animation: rotate_image 10s linear infinite; transform-origin: 50% 50%;}
+.sec_mn .img_area {width:48%; height:auto; background-color:#fff; box-shadow:0px 3px 6px 0.18px rgba(0, 0, 0, 0.16);}
+.sec_mn .img_area .img {width:100%;}
+.sec_mn .txt_area {margin-left:100px;}
+.sec_mn .txt_area .mn_tit {color:#253572; font-weight:700; font-size:5rem; line-height:1.36em; margin-bottom:4px;}
+.sec_mn .txt_area .desc {color:#777; margin-bottom:88px; font-size:2.6rem; line-height:1.308em;}
+@keyframes rotate_image{
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/* ============================== [ COSMECEUTICAL ] ========================================================================================== */
+.sec_cos {padding-top:266px; padding-left:calc((100% - 1300px)/2);}
+.sec_cos .cotn {width:100%;}
+.sec_cos .main_tit {padding-left:20px;}
+.slide_wrap {margin-top:87px; display:flex; padding-left:20px;}
+.slide_wrap .txt_wrap {padding-top:30px; margin-right:50px;}
+.slide_wrap .txt_wrap .sub_tit {color:#e5e5e5; font-size:2.6rem; line-height:1.346em;}
+.slide_wrap .txt_wrap .slide_tit {font-size:4.4rem; line-height:1.346em; margin-top:28px;}
+.slide_wrap .txt_wrap .desc {font-size:2.4rem; line-height:1.458em; margin-top:3px;}
+.slide_wrap .txt_wrap .opt {display:block; margin-top:300px; font-size:2.6rem; font-weight:500;}
+
+/* 슬라이드 */
+.cos_slide {flex:1;}
+.cos_slide .img_group {width:46.6%;}
+.cos_slide .img_group .img_area {overflow:hidden; box-shadow:0px 3px 6px 0.18px rgba(0, 0, 0, 0.16);}
+.cos_slide .img_group .img_area .img {position:relative; width:100%; height:0; padding-top:69.45%;}
+.cos_slide .img_group .img_area .img img {object-fit:cover; height:100%; position:absolute; left:0; top:0;}
+.cos_slide .img_group .txt_area .tit {margin-top:30px; font-weight:700; font-size:3rem; line-height:1.467em;}
+.cos_slide .img_group .txt_area .txt {color:#777; margin-top:8px; line-height:1.350em; font-size:2rem;}
+.cos_slide .swiper-pagination {background-color:#EEEEEE; width:calc(100% - 16%) !important; height:10px; display:flex; bottom:0;}
+.cos_slide .swiper-pagination-bullet {flex:1; height:100%; border-radius:0; margin:0 !important; opacity:1; background-color:#EEEEEE; transition:background-color .2s;}
+.cos_slide .swiper-pagination-bullet-active {background-color:#253572;}
+
+/* ============================== [ DERMA-MT ] ========================================================================================== */
+.sec_derma {margin-top:180px; position:relative; overflow:hidden;}
+.sec_derma::after {display:block; content:''; width:100%; height:669px; background:url(../images/bg_derma.jpg) no-repeat 0 0; background-size:100% 100%; position:absolute; left:0; top:40px; z-index:0;}
+.sec_derma .cotn {max-width:1320px; padding:0 20px; width:100%; margin:0 auto; position:relative; z-index:1; box-sizing:border-box;}
+.sec_derma .mt_list {margin-top:220px; display:flex; position:relative;}
+.sec_derma .mt_list::after {display:block; content:''; width:180px; height:180px; background:url(../images/main_txt_cir.svg) no-repeat 0 0; background-size:180px 180px; position:absolute; right:-90px; top:-90px; animation: rotate_image 10s linear infinite; transform-origin: 50% 50%;}
+.sec_derma .item {flex:1; position:relative;}
+.sec_derma .item ~ .item {margin-left:28px;}
+.sec_derma .img_area {overflow:hidden;}
+.sec_derma .img_area .img {position:relative; width:100%; height:0; padding-top:101%; }
+.sec_derma .img_area .img img {object-fit:cover; height:100%; position:absolute; left:0; top:0; transition:transform .4s;}
+.sec_derma .item:hover .img_area .img img {transform:scale(1.15);}
+.sec_derma .txt_area {border:1px solid #DDDDDD; border-top:none; padding:30px 35px 20px; box-sizing:border-box; height:160px; background-color:#fff;}
+.sec_derma .txt_area .tit {font-weight:700; font-size:2.3rem; line-height:1.478em;}
+.sec_derma .txt_area .desc {margin-top:5px; font-size:1.7rem; color:#777; line-height:1.471em;}
+
+/* ============================== [ NEWS ] ========================================================================================== */
+.sec_news {padding-top:200px;}
+.sec_news .cotn {max-width:1320px; padding:0 20px; box-sizing:border-box; width:100%; margin:0 auto;}
+.sec_news .news_tit_area {margin-top:46px; display:flex; align-items:center; justify-content:space-between;}
+.sec_news .news_tit_area h3 {font-size:3rem; font-weight:700;}
+.sec_news .news_list {margin-top:50px; display:flex;}
+.sec_news .news_list .item {flex:1; position:relative;}
+.sec_news .item ~ .item {margin-left:40px;}
+.sec_news .img_area {overflow:hidden; box-shadow:0px 3px 6px 0.18px rgba(0, 0, 0, 0.16);}
+.sec_news .img_area .img {position:relative; width:100%; height:0; padding-top:58%;}
+.sec_news .img_area .img img {object-fit:cover; height:100%; position:absolute; left:0; top:0;}
+.sec_news .txt_area {margin-top:20px;}
+.sec_news .txt_area .tit {font-size:2.1rem; font-weight:700; line-height:1.5em; display:-webkit-box; overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp:2; -webkit-box-orient:vertical; margin-bottom:46px; min-height:60px;}
+.sec_news .txt_area .desc {font-size:1.7rem; line-height:1.353em;padding-top:16px; border-top:1px solid #707070; display:-webkit-box; overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp:3; -webkit-box-orient:vertical; }
+
+@media only screen and (max-width:1320px) {
+	/* MN DRUG */
+	.sec_mn .txt_area {margin-left:40px;}
+
+	/* COSMECEUTICAL */
+	.slide_wrap .txt_wrap {margin-right:30px;}
+	.slide_wrap .txt_wrap .opt {margin-top:150px;}
+	.cos_slide .img_group .txt_area .tit {font-size:2.7rem;}
+	.cos_slide .img_group .txt_area .txt {font-size:1.6rem;}
+}
+
+@media only screen and (max-width:1024px) {
+	.main {margin-bottom:150px;}
+
+	/* MN DRUG */
+	.sec_mn {padding-top:60px;}
+	.sec_mn .txt_area {margin-left:20px;}
+	.sec_mn .cotn::after {display:none;}
+
+	/* COSMECEUTICAL */
+	.sec_cos {padding-top:150px;}
+	.cos_slide {margin-top:60px; padding-bottom:50px;}
+	.slide_wrap {display:block; margin-top:60px;}
+	.slide_wrap .txt_wrap {margin-right:0; padding:0;}
+	.slide_wrap .txt_wrap .slide_tit {margin-top:15px; font-size:4rem;}
+	.slide_wrap .txt_wrap .opt {margin-top:50px;}
+
+	.cos_slide .swiper-pagination {width:calc(100% - 20px) !important;}
+
+	/* DERMA-MT */
+	.sec_derma {margin-top:150px;}
+	.sec_derma .mt_list {margin-top:100px;}
+	.sec_derma .item ~ .item {margin-left:20px;}
+	.sec_derma .txt_area {padding:20px 20px 10px;}
+
+	/* NEWS */
+	.sec_news {padding-top:150px;}
+	.sec_news .news_tit_area {margin-top:20px;}
+	.sec_news .news_list {margin-top:30px;}
+	.sec_news .item ~ .item {margin-left:15px;}
+	.sec_news .txt_area .tit {margin-bottom:25px;}
+}
+
+@media only screen and (max-width:767px) {
+	.main_tit {font-size:4.5rem;}
+
+	/* MN DRUG */
+	.sec_mn .cotn {display:block;}
+	.sec_mn .img_area {width:55%; margin:0 auto;}
+	.sec_mn .txt_area {margin:30px 0 0 0; text-align:center;}
+	.sec_mn .txt_area .desc {margin-bottom:40px;}
+	.sec_mn .txt_area .mn_tit {font-size:4rem;}
+
+	/* COSMECEUTICAL */
+	.slide_wrap .txt_wrap .opt {margin-top:30px;}
+
+	.cos_slide .img_group {width:75%;}
+	.cos_slide .img_group .txt_area .tit {margin-top:20px;}
+	.cos_slide .img_group .txt_area .txt {font-size:14px;}
+	.cos_slide .img_group .txt_area .txt br {display:none;}
+
+	/* DERMA-MT */
+	.sec_derma .mt_list {margin-top:40px; display:block;}
+	.sec_derma .item ~ .item {margin:30px 0 0 0;}
+	.sec_derma .txt_area {padding:20px; height:auto;}
+	.sec_derma .mt_list::after {display:none;}
+	.sec_derma::after {display:none;}
+
+	/* NEWS */
+	.sec_news .news_list {margin-top:20px; display:block;}
+	.sec_news .item ~ .item {margin:30px 0 0 0;}
+	.sec_news .txt_area .tit {margin-bottom:15px; min-height:0;}
+}

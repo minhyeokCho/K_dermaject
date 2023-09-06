@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* ************************************************************************************************************************************************************
+						《 setting.css 》
+************************************************************************************************************************************************************ */
+
+/* ------------------------------ [ Layout Reset ] ------------------------------------------------------------------------------------------ */
+/* Reset */
+html,body,div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+abbr,address,big,cite,code,del,dfn,font,figure,figcaption,img,ins,q,s,samp,small,strike,sub,sup,tt,var,
+b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+	color:#333;
+	margin:0;
+	padding:0;
+}
+html, body{font-family: 'Noto Sans KR', sans-serif;font-size: 62.5%;}
+div,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+abbr,address,big,cite,code,del,dfn,font,figure,figcaption,img,ins,q,s,samp,small,strike,sub,sup,tt,var,
+b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {font-family: 'Noto Sans KR', sans-serif;letter-spacing:-0.03em;}
+button,input,textarea {font-family: 'Noto Sans KR', sans-serif;letter-spacing:-0.03em;}
+select {font-family: 'Noto Sans KR', sans-serif;letter-spacing:-0.03em;}
+::selection {color:#fff; background-color:#253572;}
+button,input,textarea {
+	-webkit-text-size-adjust:none;
+	-webkit-appearance:none;
+	-webkit-border-radius:0;
+	border:none;
+	border-radius:0;
+	margin:0;
+	padding:0;
+}
+button {
+	background:none;
+	border:none;
+	color:inherit;
+	cursor:pointer;
+}
+button:disabled {
+	cursor:default;
+}
+select {
+	background-color:transparent;
+	border:none;
+	letter-spacing:inherit;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-webkit-font-smoothing:antialiased;
+	border:none;
+	border-radius:0;
+	margin:0;
+	padding:0;
+}
+select::-ms-expand {
+	display:none; /* 화살표 없애기 for IE10, 11 */
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+}
+ul,li,ol {
+	list-style-type:none;
+}
+legend,caption {
+	overflow:hidden;
+	visibility:hidden;
+	position:absolute;
+	font-size:0;
+	line-height:0;
+	height:0;
+	z-index:-1;
+}
+a,a:active,input:active,button:active,select:active,label:active,
+a:focus,input:focus,button:focus,select:focus,label:focus {
+	text-decoration:none;
+	outline:none;
+}
+a,span,em,strong {
+	color:inherit;
+	font:inherit;
+	border:0;
+	margin:0;
+	padding:0;
+	-webkit-font-smoothing:antialiased;
+}
+a,input,button,select,label {
+	-webkit-tap-highlight-color:transparent;
+}
+::-webkit-input-placeholder {
+	color:#aaaaaa;
+	font:inherit;
+	line-height:inherit;
+}
+input:disabled::-webkit-input-placeholder {
+	color:#aaaaaa;
+}
+:-moz-placeholder {
+	color:#aaaaaa;
+	font:inherit;
+	line-height:inherit;
+}
+input:disabled:-moz-placeholder {
+	color:#aaaaaa;
+}
+::-moz-placeholder {
+	color:#aaaaaa;
+	font:inherit;
+	line-height:inherit;
+}
+input:disabled::-moz-placeholder {
+	color:#aaaaaa;
+}
+:-ms-input-placeholder {
+	color:#aaaaaa;
+	font:inherit;
+	line-height:inherit;
+}
+input:disabled:-ms-input-placeholder {
+	color:#aaaaaa;
+}
+textarea::placeholder {
+	color:#aaaaaa;
+}
+textarea::-webkit-placeholder {
+	color:#aaaaaa;
+}
+textarea::-moz-placeholder {
+	color:#aaaaaa;
+}
+textarea::-ms-placeholder {
+	color:#aaaaaa;
+}
+.blind {
+	overflow:hidden;
+	font-size:0;
+	line-height:0;
+	position:absolute;
+	height:0;
+	width:0;
+}
+.go_view {/* background-color:rgba(0,0,0,0.3); */ position:absolute; left:0; top:0; height:100%; width:100%;}
+.img img {width: 100%; height: auto; display: block;}

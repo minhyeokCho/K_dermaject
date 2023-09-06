@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="그룹_410" data-name="그룹 410" transform="translate(-1540 -12810)">
+    <g id="타원_117" data-name="타원 117" transform="translate(1600 12870) rotate(180)" fill="#fff" stroke="#707070" stroke-width="1">
+      <circle cx="30" cy="30" r="30" stroke="none"/>
+      <circle cx="30" cy="30" r="29.5" fill="none"/>
+    </g>
+    <path id="caret-left" d="M85.369,63.179A1.143,1.143,0,0,1,83.753,64.8L72.329,53.371a1.142,1.142,0,0,1,0-1.617L83.753,40.33a1.143,1.143,0,1,1,1.617,1.617L74.752,52.563Z" transform="translate(1649.994 12892.995) rotate(180)" fill="#777"/>
+  </g>
+</svg>
